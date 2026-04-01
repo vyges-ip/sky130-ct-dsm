@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vyges.com/schema/v1/vyges-metadata.schema.json",
+  "x-version": "1.0.0",
+  "name": "sky130-ct-dsm",
+  "version": "0.1.0",
+  "description": "Continuous-time delta-sigma modulator designed for biosignal acquisition, implemented on the SKY130 process node.",
+  "license": "Apache-2.0",
+  "maturity": "rtl_verified",
+  "target": [
+    "asic"
+  ],
+  "design_type": [
+    "analog",
+    "mixed-signal"
+  ],
+  "created": "2026-04-01T05:16:25Z",
+  "updated": "2026-04-01T05:16:25Z",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/michaelk99/SKY130_CT-DSM",
+    "commit": "b07b0f04bb3be1a5564f9dda9166a4d6d7e0b107",
+    "ip_path": ".",
+    "private": false,
+    "containsEncryptedPayload": false,
+    "indexing": true
+  },
+  "maintainers": [
+    {
+      "name": "Vyges",
+      "email": "team@vyges.com",
+      "url": "https://vyges.com",
+      "github": "vyges"
+    }
+  ],
+  "interfaces": [],
+  "parameters": [],
+  "performance": {},
+  "architecture": {
+    "type": "peripheral",
+    "features": [
+      "continuous-time delta-sigma modulation",
+      "biosignal acquisition"
+    ]
+  },
+  "asic": {
+    "flavor": "analog",
+    "technology": [
+      "sky130A"
+    ]
+  },
+  "fpga": {
+    "toolchain": [],
+    "devices": []
+  },
+  "dependencies": [],
+  "test": {
+    "testbenches": [],
+    "status": "upstream_passing",
+    "coverage": "functional"
+  },
+  "documentation": {
+    "upstream": "https://github.com/michaelk99/SKY130_CT-DSM"
+  },
+  "artifacts": {
+    "total_rtl_lines": 0
+  },
+  "categories": [
+    {
+      "main_category": "Analog & Mixed-Signal",
+      "sub_category": "Delta-Sigma Modulators"
+    }
+  ],
+  "keywords": [
+    "delta-sigma modulator",
+    "biosignal acquisition",
+    "analog",
+    "mixed-signal",
+    "sky130"
+  ],
+  "trust": {
+    "verification_level": "simulation_passing",
+    "tapeout_count": 0,
+    "fpga_validated": false,
+    "formal_verified": false,
+    "maintained": true,
+    "last_activity": "2026-04-01"
+  },
+  "meta": {
+    "template": {
+      "generator": "github-models-ai",
+      "template_version": "1.0.0",
+      "generated_at": "2026-04-01T05:16:25Z"
+    },
+    "schema": {
+      "version": "1.0.0"
+    }
+  }
+}
