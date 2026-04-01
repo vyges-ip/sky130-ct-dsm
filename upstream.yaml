@@ -1,0 +1,15 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "standalone"
+  repo: https://github.com/michaelk99/SKY130_CT-DSM
+  commit: {"message":"No commit found for SHA: main","documentation_url":"https://docs.github.com/rest/commits/commits#get-a-commit","status":"422"}b07b0f04bb3be1a5564f9dda9166a4d6d7e0b107
+  extracted_at: "2026-04-01T05:14:14Z"
+import:
+  rtl:
+    - path: "."
+      map_to: "rtl"
+  license:
+    - path: "Apache-2.0"
+license:
+  spdx: Apache-2.0
+  file: LICENSE
