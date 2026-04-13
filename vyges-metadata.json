@@ -32,7 +32,89 @@
       "github": "vyges"
     }
   ],
-  "interfaces": [],
+  "interfaces": [
+    {
+      "type": "clock",
+      "name": "clock",
+      "signals": [
+        {
+          "name": "clk_i",
+          "direction": "input",
+          "type": "clock",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "type": "reset",
+      "name": "reset",
+      "signals": [
+        {
+          "name": "rst_ni",
+          "direction": "input",
+          "type": "reset",
+          "width": 1,
+          "active_level": "low"
+        }
+      ]
+    },
+    {
+      "type": "bus",
+      "name": "ctrl",
+      "protocol": "apb",
+      "description": "Default control bus added by metadata fix pass \u2014 verify against RTL.",
+      "signals": [
+        {
+          "name": "psel_i",
+          "direction": "input",
+          "type": "control",
+          "width": 1
+        },
+        {
+          "name": "penable_i",
+          "direction": "input",
+          "type": "control",
+          "width": 1
+        },
+        {
+          "name": "pwrite_i",
+          "direction": "input",
+          "type": "control",
+          "width": 1
+        },
+        {
+          "name": "paddr_i",
+          "direction": "input",
+          "type": "address",
+          "width": 32
+        },
+        {
+          "name": "pwdata_i",
+          "direction": "input",
+          "type": "data",
+          "width": 32
+        },
+        {
+          "name": "prdata_o",
+          "direction": "output",
+          "type": "data",
+          "width": 32
+        },
+        {
+          "name": "pready_o",
+          "direction": "output",
+          "type": "control",
+          "width": 1
+        },
+        {
+          "name": "pslverr_o",
+          "direction": "output",
+          "type": "control",
+          "width": 1
+        }
+      ]
+    }
+  ],
   "parameters": [],
   "performance": {},
   "architecture": {
@@ -54,7 +136,14 @@
   },
   "dependencies": [],
   "test": {
-    "testbenches": [],
+    "testbenches": [
+      {
+        "name": "upstream",
+        "path": "tb/",
+        "framework": "upstream",
+        "description": "Upstream project's testbench harness \u2014 see source repo."
+      }
+    ],
     "status": "upstream_passing",
     "coverage": "functional"
   },
