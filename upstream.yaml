@@ -2,7 +2,7 @@ schema_version: "vyges-upstream-v1"
 upstream:
   type: "standalone"
   repo: https://github.com/michaelk99/SKY130_CT-DSM
-  commit: b07b0f04bb3be1a5564f9dda9166a4d6d7e0b107
+  commit: 7236cece75383a8f89c8f66b07d293e951f839ec
   extracted_at: "2026-04-01T05:16:15Z"
 import:
   rtl:
@@ -13,5 +13,4 @@ import:
 license:
   spdx: Apache-2.0
   file: LICENSE
-
 metadata_locked: true
